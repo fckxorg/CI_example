@@ -16,6 +16,7 @@ target_include_directories(${TARGET_NAME} PUBLIC ${INCLUDE_ROOT})
 target_link_libraries(${TARGET_NAME} PUBLIC libodd)
 
 if(TESTS)
+    add_subdirectory(lib/googletest)
     add_subdirectory(tests)
 endif()
 
