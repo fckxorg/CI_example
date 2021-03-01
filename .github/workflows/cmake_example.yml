@@ -27,12 +27,10 @@ jobs:
 
       - name: Load libraries
         working-directory: ${{github.workspace}}/lib
-        shell: bash
         run: git submodule update --init --recursive
       
       - name: Configure cmake build directory
         working-directory: ${{github.workspace}}/build
-        shell: bash
         run: cmake $GITHUB_WORKSPACE -DTESTS=ON
       
       - name: Build and test
