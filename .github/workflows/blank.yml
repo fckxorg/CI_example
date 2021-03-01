@@ -41,4 +41,4 @@ jobs:
         uses: actions/upload-artifact@v2
         with:
           name: odd_checker
-          path: ${{github.workspace}}/bin/odd_checker
+          path: bin/odd_checker
